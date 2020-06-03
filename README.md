@@ -2,6 +2,7 @@
 Compares values in list to user input, using fuzzywuzzy's WRatio method to find matches.
 
 TO-DO
+
 Hyperlink support - insert URL as user input and pull ingredient data directly
 
 Word match - Display token matches between inputs and list for more detailed user analysis
