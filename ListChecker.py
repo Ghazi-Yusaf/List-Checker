@@ -14,7 +14,7 @@ productList = userInput.split(",")
 
 # Tables for pretty output
 matches = PrettyTable(["Ingredient"])
-closeMatches = PrettyTable(["Product Ingredient", "User Ingredient", "Similarity Ratio (0-100)"])
+closeMatches = PrettyTable(["Product Ingredient", "User Ingredient", "Similarity Ratio"])
 closeMatches.reversesort = True
 
 # Loop through input list
@@ -31,11 +31,13 @@ for item in productList:
             break
 
 # Sort similar matches by most similar to least similar
-closeMatches.sortby = "Similarity Ratio (0-100)"
+closeMatches.sortby = "Similarity Ratio"
 
 # Print tables
 print("\nDirect matches:")
 print(matches)
-print("\nSimilar matches (Similarity ratio over 90), use your own discretion:")
+print("\nSimilar matches, showing results with a ratio (0-100) over 90, use your own discretion:")
 print(closeMatches)
 print()
+
+input("Press any button to exit...")
