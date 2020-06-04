@@ -28,7 +28,6 @@ for item in productList:
         # Check for similar matches to ingredients
         if fuzz.WRatio(item, itemCheck) >= 90:
             closeMatches.add_row([item, itemCheck, fuzz.WRatio(item, itemCheck)])
-            break
 
 # Sort similar matches by most similar to least similar
 closeMatches.sortby = "Similarity Ratio"

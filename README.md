@@ -5,7 +5,7 @@ TO-DO
 
 List delimiter - Currently only accepts comma delimited data, update for other delimiters
 
-Space delmiter - Much more difficult, for non-delimited lists, would probably require seperate protocol, wouldn't be able to spot phrase breaks
+Space delimiter - Much more difficult, for non-delimited lists, would probably require seperate protocol, wouldn't be able to spot phrase breaks
 
 Hyperlink support - insert URL as user input and pull ingredient data directly
 
